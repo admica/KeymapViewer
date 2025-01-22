@@ -2,7 +2,7 @@
 
 A plugin to visualize your key mappings in Neovim.
 
-![Keymap Viewer Icon](icon.png)
+[Keymap Viewer Logo](logo.png)
 
 ## 🚀 Installation
 
@@ -38,7 +38,9 @@ require('KeymapViewer').setup({
 
 ## 📝 License
 
-This project is licensed under the **GNU General Public License v3.0 (GPLv3)**. For more details, refer to the [LICENSE](LICENSE) file.
+This project is licensed under the **GNU General Public License v3.0 (GPLv3).
+
+For more details, refer to the [LICENSE](LICENSE) file.
 
 ## 🛠️ Contributing
 
