@@ -1,19 +1,22 @@
-# Keymap Viewer for Neovim
+# 🔥 Keymap Viewer for Neovim
 
 A plugin to visualize your key mappings in Neovim.
 
-## Installation
+![Keymap Viewer Icon](icon.png)
+
+## 🚀 Installation
 
 Using [packer.nvim](https://github.com/admica/KeymapViewer.nvim):
 ```lua
 use 'admica/KeymapViewer'
 ```
 
-### Or with vim-plug:
-
+Or with vim-plug:
+```lua
 Plug 'your-username/keymap-viz'
+```
 
-## Usage
+## 🤓 Usage
 
 Start recording with :KeymapVizStart or <Leader>vs.
 
@@ -23,7 +26,7 @@ Toggle the visualization buffer with :KeymapVizToggle or <Leader>vt.
 
 Clear recorded sequences with :KeymapVizClear or <Leader>vc.
 
-## Configuration
+## ⚙️ Configuration
 
 ```lua
 require('KeymapViewer').setup({
@@ -32,3 +35,11 @@ require('KeymapViewer').setup({
     persistence_file = '~/.config/nvim/KeymapViewer_data.json' -- File to save/load sequences
 })
 ```
+
+## 📝 License
+
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)**. For more details, refer to the [LICENSE](LICENSE) file.
+
+## 🛠️ Contributing
+
+Feel free to submit issues or pull requests if you have suggestions or bug reports.
