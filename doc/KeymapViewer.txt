@@ -1,0 +1,52 @@
+*KeymapViewer.txt*   Key Mapping Visualizer for Neovim
+
+==============================================================================
+CONTENTS                                                    *KeymapViewer-contents*
+
+    1. Introduction................|KeymapViewer-intro|
+    2. Commands....................|KeymapViewer-commands|
+    3. Configuration...............|KeymapViewer-config|
+    4. Mappings....................|KeymapViewer-mappings|
+
+==============================================================================
+1. Introduction                                          *KeymapViewer-intro*
+
+This plugin allows you to visualize key sequences in Neovim by recording them
+and showing them in a dedicated buffer.
+
+==============================================================================
+2. Commands                                              *KeymapViewer-commands*
+
+:KeymapVizStart              Start recording keystrokes.
+:KeymapVizStop               Stop recording and show the visualization.
+:KeymapVizToggle             Toggle visibility of the visualization buffer.
+:KeymapVizClear              Clear the recorded sequence.
+
+==============================================================================
+3. Configuration                                          *KeymapViewer-config*
+
+You can configure the plugin by calling `require('KeymapViewer').setup({})` with
+your settings:
+
+- `width`: Width of the visualization buffer. Default is 30.
+- `position`: Position of the buffer, can be 'right' or 'left'. Default is 'right'.
+- `persistence_file`: Path to save/load the key sequence. Default is ~/.config/nvim/KeymapViewer_data.json.
+
+Example:
+>lua
+    require('KeymapViewer').setup({
+        width = 40,
+        position = 'left',
+        persistence_file = '~/.config/nvim/KeymapViewer_custom.json'
+    })
+<
+
+==============================================================================
+4. Mappings                                              *KeymapViewer-mappings*
+
+Default mappings:
+
+- `<Leader>vs` to start recording.
+- `<Leader>ve` to stop recording.
+- `<Leader>vt` to toggle visualization.
+- `<Leader>vc` to clear the sequence.
