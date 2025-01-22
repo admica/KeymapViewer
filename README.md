@@ -7,6 +7,7 @@ A plugin to visualize your key mappings in Neovim.
 Using [packer.nvim](https://github.com/admica/KeymapViewer.nvim):
 ```lua
 use 'admica/KeymapViewer'
+```
 
 ### Or with vim-plug:
 
