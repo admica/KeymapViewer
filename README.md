@@ -2,7 +2,7 @@
 
 A plugin to visualize your key mappings in Neovim.
 
-[Keymap Viewer Logo](logo.png)
+[logo.png](logo.png)
 
 ## 🚀 Installation
 
